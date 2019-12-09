@@ -15,7 +15,7 @@
     </parent>
     <groupId>guru.springframework</groupId>
     <artifactId>wr-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>wr-pet-clinic</name>
     <description>WR Pet Clinic Project</description>
 
@@ -24,8 +24,6 @@
     </properties>
 
     <dependencies>
-
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -52,7 +50,18 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/wrowston/wr-pet-clinic.git</developerConnection>
+    </scm>
 
 </project>
